@@ -1,15 +1,15 @@
 import React from "react";
-import Left from "./home/Leftpart/Left";
-import Right from "./home/Rightpart/Right";
+import Left from "./home/leftpart/Left";
+import Right from "./home/rightpart/Right";
 import Signup from "./components/Signup";
 import Login from "./components/Login";
-import { useAuth } from "./context/AuthProvider";
+import { useAuth } from "./context/Authprovider";
 import { Toaster } from "react-hot-toast";
 
 import { Navigate, Route, Routes } from "react-router-dom";
 function App() {
   const [authUser, setAuthUser] = useAuth();
-  console.log(authUser);
+  
   return (
     <>
       <Routes>

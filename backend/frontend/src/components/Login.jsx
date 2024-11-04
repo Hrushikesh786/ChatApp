@@ -23,7 +23,7 @@ const Login = () => {
     // console.log(userInfo);
      axios.post("/api/user/login",userInfo)
     .then((response)=>{
-      console.log(response.data);
+      
       if(response.data){
         toast.success("login Successful")
       }
